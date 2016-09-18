@@ -1,0 +1,4 @@
+export const CHECKOUT = 'CHECKOUT';
+export const CATALOG = 'CATALOG';
+export const PRODUCT_SELECTED = 'PRODUCT_SELECTED';
+export const CONFIRM_CHECKOUT = 'CONFIRM_CHECKOUT';
