@@ -1,5 +1,6 @@
 import {PRODUCT_SELECTED, CONFIRM_CHECKOUT} from '../constants';
 import {setCookie, getCookie} from '../helpers/helper_cookies';
+
 export default function (state = [], action) {
     switch (action.type) {
         case PRODUCT_SELECTED:

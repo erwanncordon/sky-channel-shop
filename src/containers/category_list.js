@@ -14,11 +14,8 @@ export class CategoryList extends Component {
                 return null;
             }
             return (
-                <div
-                    key={category.id}
-                    className="main-section-box col-sm-4">
-                    <div
-                        className="category main-section-box-inner ">
+                <div key={category.id} className="main-section-box col-sm-4">
+                    <div className="category main-section-box-inner ">
                         {category.title}
                         <form onSubmit={(event) => event.preventDefault()}>
                             <ProductList products={products}/>

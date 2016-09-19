@@ -18,6 +18,7 @@ export class Basket extends Component {
             }
         });
     }
+
     checkout() {
         //stops people from editing html and un-disabling buttons
         if (_.isEmpty(this.props.basket)) {
@@ -38,7 +39,7 @@ export class Basket extends Component {
             }
             return (
                 <div className="basket-item"
-                    key={product.id}>
+                     key={product.id}>
                     {product.title}
                 </div>
             );
@@ -58,8 +59,7 @@ export class Basket extends Component {
                                 }}
                                 type="button"
                                 className="btn btn-secondary basket-checkout"
-                                disabled={_.isEmpty(this.props.basket) ? true : false}
-                            >
+                                disabled={_.isEmpty(this.props.basket)}>
                                 Checkout
                             </button>
                         </span>
@@ -75,7 +75,7 @@ function mapStateToProps({basket, products}) {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({checkout: checkout, selectProduct:selectProduct}, dispatch);
+    return bindActionCreators({checkout: checkout, selectProduct: selectProduct}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Basket);

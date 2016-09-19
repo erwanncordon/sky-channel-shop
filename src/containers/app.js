@@ -19,7 +19,7 @@ export class App extends Component {
     }
 
     render() {
-        let view = <div>Unkown State</div>
+        let view = <div>Unknown State</div>
         if (this.props.appState == CHECKOUT) {
             view = this.renderCheckout();
         } else if (this.props.appState == CATALOG) {

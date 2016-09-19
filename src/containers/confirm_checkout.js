@@ -14,7 +14,7 @@ export class ConfirmCheckout extends Component {
             let product = this.props.products.find((item) => {
                 return item.id == basketProductId;
             });
-            if(_.isEmpty(product)) {
+            if (_.isEmpty(product)) {
                 return;
             }
             return (
@@ -36,13 +36,10 @@ export class ConfirmCheckout extends Component {
                     </ul>
                     <form onSubmit={(event) => event.preventDefault()}>
                     <span className="">
-                            <button
-                                onClick={() => {
-                                    this.props.confirmCheckout()
-                                }}
-                                type="button"
-                                className="btn btn-secondary"
-                            >Accept and reset
+                            <button onClick={() => {
+                                this.props.confirmCheckout()
+                            }} type="button" className="btn btn-secondary">
+                                Accept and reset
                             </button>
                         </span>
                     </form>

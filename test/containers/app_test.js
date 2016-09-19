@@ -21,7 +21,7 @@ describe('ProductList', () => {
     it('should render unknown view when no appState provided', () => {
         const {props, enzymeWrapper} = setup();
         expect(props.appState).toEqual(null)
-        expect(enzymeWrapper.find('div').nodes[2].props.children).toEqual('Unkown State');
+        expect(enzymeWrapper.find('div').nodes[2].props.children).toEqual('Unknown State');
     });
 
     it('should render Checkout if appstate is CHECKOUT', () => {

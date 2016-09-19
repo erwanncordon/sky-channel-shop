@@ -5,6 +5,7 @@ export function checkout() {
         type: CHECKOUT
     };
 }
+
 export function confirmCheckout() {
     return {
         type: CONFIRM_CHECKOUT
